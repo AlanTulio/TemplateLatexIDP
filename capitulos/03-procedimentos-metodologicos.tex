@@ -1,27 +1,32 @@
-%%=============================================================================
-%% CAPITULO 3 -- PROCEDIMENTOS METODOLOGICOS
-%%=============================================================================
-
+% Esqueleto didático adaptado do pré-projeto fornecido pelo aluno.
 \section{Procedimentos metodológicos}
 
-Apresente, de forma clara e objetiva, o modo pelo qual o projeto foi
-implementado. Após um breve texto introdutório, explicite a metodologia em etapas
-ou ações. Poderá, ainda, fazer referência às técnicas ou a detalhes específicos.
-Explique como se deu o acompanhamento do desenvolvimento do projeto e a avaliação
-de sua efetividade.
+Quanto à abordagem, a pesquisa é predominantemente quantitativa porque se baseará na coleta, estruturação, integração e análise de bases de dados numéricas e categóricas relacionadas a passagens aéreas, tais como datas de solicitação, emissão, cotação e viagem, origem, destino, valores pagos, preços cotados, companhia aérea, antecedência de compra, características da rota e atributos temporais. A abordagem quantitativa é adequada porque permite mensurar padrões, comparar distribuições, identificar associações entre variáveis, avaliar desempenho de modelos preditivos e testar hipóteses relacionadas à recomendação de janelas de compra. Conforme Creswell e Creswell (2021), a pesquisa quantitativa é apropriada quando se pretende examinar relações entre variáveis mensuráveis e analisar dados por meio de procedimentos estatísticos.
 
-\subsection{Tipo e abordagem da pesquisa}
+Será calculada a antecedência de compra, em dias, considerando a diferença entre a data de emissão ou compra e a data da viagem. Quando disponíveis, também poderão ser calculadas outras medidas de antecedência, como antecedência da solicitação, antecedência da autorização e tempo decorrido entre solicitação e emissão. Essas variáveis serão importantes para distinguir restrições administrativas internas de comportamento tarifário externo.
 
-Classifique a pesquisa quanto à natureza, aos objetivos, à abordagem e aos
-procedimentos técnicos adotados.
+A Figura~\ref{fig:fluxo-fontes} representa as três fontes planejadas. A Tabela~\ref{tab:fontes-planejadas} distingue o que cada uma poderá informar; ela não contém dados empíricos coletados.
 
-\subsection{Instrumentos de coleta de dados}
+\begin{figure}[htb]
+\caption{Fontes previstas para a abordagem analítica}
+\label{fig:fluxo-fontes}
+\centering
+\fbox{\parbox{0.8\textwidth}{Registros de compras realizadas + dados públicos + cotações prospectivas $\longrightarrow$ base analítica $\longrightarrow$ avaliação de padrões e incerteza.}}
+\fonte{Elaboração do autor a partir do pré-projeto (2026).}
+\end{figure}
 
-Descreva os instrumentos utilizados, o universo e a amostra, os critérios de
-inclusão e exclusão e o período de coleta.
-
-\subsection{Procedimentos de análise}
-
-Explique como os dados foram tratados e analisados, indicando as categorias de
-análise e, quando houver, as ferramentas estatísticas ou de análise de conteúdo
-empregadas.
+\begin{table}[htb]
+\caption{Papel analítico das fontes planejadas}
+\label{tab:fontes-planejadas}
+\centering
+\begin{tabular}{p{0.3\textwidth}p{0.55\textwidth}}
+\hline
+Fonte & Papel previsto \\
+\hline
+Compras realizadas & Caracterizar gasto observado e processo institucional. \\
+Dados públicos & Contextualizar padrões agregados do mercado. \\
+Cotações prospectivas & Observar preços repetidos sob condições controladas. \\
+\hline
+\end{tabular}
+\fonte{Elaboração do autor a partir do pré-projeto (2026).}
+\end{table}
